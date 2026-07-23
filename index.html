@@ -11,51 +11,62 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:Arial,sans--serif;  
+}  
+  
+body{  
+background:#f4f8fb;  
+}  
+  
+nav{  
+background:#006400;  
+padding:15px;  
+text-align:center;  
+}  
+  
+nav a{  
+color:white;  
+text-decoration:none;  
+margin:15px;  
+font-size:18px;  
+font-weight:bold;  
+}  
+ .hero{
+    background:url("banner.jpg") no-repeat center center;
+    background-size:cover;
+    height:450px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-body{
-background:#f4f8fb;
-}
-
-nav{
-background:#006400;
-padding:15px;
-text-align:center;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:15px;
-font-size:18px;
-font-weight:bold;
-}
-.hero{
-background:url("banner . jpg");
-background-size:cover;
-background-position:center;
-height:400px;
-display:flex;
-justify-content:center;
-align-items:center;
+.hero-box{
+    background:rgba(0,0,0,0.45);
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    color:white;
+    width:90%;
+    max-width:500px;
 }
 
 .hero h1{
-font-size:40px;
-color:white;
+    font-size:32px;
+    margin-bottom:10px;
 }
+
 .hero p{
-font-size:20px;
-margin:15px 0;
+    font-size:18px;
+    margin-bottom:20px;
 }
+
 .hero button{
-background:white;
-color:#006400;
-padding:12px 25px;
-border:none;
-border-radius:8px;
-font-size:18px;
+    background:#00a651;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
 }
 .profile{
 width:170px;
@@ -131,11 +142,16 @@ box-shadow:0 2px 10px rgba(0,0,0,0.3);
 <a href="#">Courses</a>
 <a href="#">Contact</a>
 </nav>
-<div class="hero">
-<a href="https://wa.me/923147040102">
-<button>Join Now</button>
-</a>
-</div>
+ <div class="hero">
+  <div class="hero-box">
+    <h1>ONLINE QURAN ACADEMY</h1>
+    <p>Learn Quran Online with Qualified Teachers</p>
+
+    <a href="https://wa.me/923147040102">
+      <button>📲 Free Trial Class</button>
+    </a>
+  </div>
+ </div>
 <div class="container">
 <img src="profile . jpg" class="profile" alt="Qari Muhammad Asim">
 <h2 class="section-title">About Teacher</h2>
