@@ -16,20 +16,48 @@
 body{
     background:#f4f8fb;
 }
-
-nav{
+.navbar{
     background:#006400;
-    padding:15px;
-    text-align:center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 25px;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
-nav a{
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.menu a{
     color:white;
     text-decoration:none;
-    margin:15px;
+    margin-left:20px;
     font-size:18px;
+    transition:.3s;
 }
 
+.menu a:hover{
+    color:#FFD700;
+}
+
+@media(max-width:768px){
+    .navbar{
+        flex-direction:column;
+    }
+
+    .menu{
+        margin-top:10px;
+    }
+
+    .menu a{
+        display:inline-block;
+        margin:8px;
+    }
 .hero{
     background:url("banner . jpg") center center no-repeat;
 background-size:cover;
@@ -150,17 +178,44 @@ footer{
     transform:translateY(-3px);
     box-shadow:0 8px 20px rgba(37,211,102,.5);
 }
+  html{
+    scroll-behavior:smooth;
+}
+
+.course{
+    transition:0.3s;
+}
+
+.course:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+button{
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+    background:#009933;
+}  
 </style>
 
 </head>
 
 <body>
+<nav class="navbar">
+    <div class="logo">
+        📖 Online Quran Academy
+    </div>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Courses</a>
-    <a href="#">Contact</a>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Courses</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </div>
 </nav>
 
 <div class="hero">
@@ -172,12 +227,12 @@ footer{
     <button>📲 Join Free Trial</button>
 </a>
 </div>
-<div class="container">
+<div class="container" id="about">
 <img src="profile . jpg" class="profile" alt="Qari Muhammad Asim">
 <h2 class="section-title">About Teacher</h2>
 <p style="text-align:center;">Name:Qari Muhammad Asim</p>
 <p style="text-align:center;">Qualification: Hafiz-e-Quran</p>
-<h2 class="section-title">📚 Our Courses</h2>
+<h2 class="section-title" id="courses">Our Courses</h2>
 
 <div class="course">
 <h3>📖 Nazra Quran</h3>
@@ -198,7 +253,7 @@ footer{
 <h3>🌍 Online Classes</h3>
 <p>Classes available worldwide.</p>
 </div>
-<h2 class="section-title">Contact Us</h2>
+<h2 class="section-title" id="contact">Contact Us</h2>
 <p style="text-align:center;">
 📱 WhatsApp: +92 3147040102
 </p>
@@ -209,7 +264,7 @@ footer{
 </p>
 <h2 class="section-title">Monthly Fee</h2>
 <h2 class="section-title">Student Reviews</h2>
-<h2 class="section-title">📸 Our Gallery</h2>
+<h2 class="section-title" id="gallery">Gallery</h2>
 
 <div class="course">
 <img src="background . jpg" style="width:100%;border-radius:15px;">
@@ -429,6 +484,7 @@ Our vision is to provide quality Quran education to every Muslim home through on
 <div class="course">
 <h3>Topi, Swabi</h3>
 <p>Khyber Pakhtunkhwa, Pakistan</p>
+ </form>
 </div>
 
 <h2 class="section-title">Online Admission Form</h2>
