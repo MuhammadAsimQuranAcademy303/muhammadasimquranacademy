@@ -83,7 +83,7 @@ font-size:15px;
 /* ===== HERO ===== */
 
 .hero{
-background:url("banner  . jpg") center center no-repeat;
+background:url("banner . jpg") center center no-repeat;
 background-size:cover;
 height:230px;
 display:flex;
@@ -322,7 +322,111 @@ opacity:1;
 transform:translateY(0);
 }
 
+/* ===== PREMIUM NAVBAR ===== */
+
+.navbar{
+    background:#006400;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 18px;
+    position:sticky;
+    top:0;
+    z-index:999;
 }
+
+.logo{
+    color:#fff;
+    font-size:22px;
+    font-weight:bold;
+    white-space:nowrap;
+}
+
+.menu{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.menu a{
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:bold;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+    background:url("banner.jpg") center center;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-color:#f4f8fb;
+    height:230px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-content{
+    background:rgba(0,0,0,.30);
+    padding:15px;
+    border-radius:18px;
+    text-align:center;
+    width:90%;
+}
+
+.hero-content h1{
+    color:#fff;
+    font-size:30px;
+}
+
+.hero-content p{
+    color:#fff;
+    font-size:18px;
+    margin:10px 0;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+.logo{
+    font-size:18px;
+}
+
+.menu{
+    justify-content:center;
+    gap:10px;
+}
+
+.menu a{
+    font-size:14px;
+}
+
+.hero{
+    height:200px;
+    background-size:contain;
+}
+
+.hero-content h1{
+    font-size:22px;
+}
+
+.hero-content p{
+    font-size:15px;
+}
+
+.profile{
+    width:130px;
+    height:130px;
+}
+
+.section-title{
+    font-size:26px;
+}
+
+
 
 </style>  
 
@@ -330,30 +434,40 @@ transform:translateY(0);
 </head>
 
 <body>
+<!-- ===== NAVBAR ===== -->
 <nav class="navbar">
+
     <div class="logo">
         📖 Online Quran Academy
     </div>
 
     <div class="menu">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Courses</a>
-        <a href="#">Gallery</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
     </div>
+
 </nav>
-<div class="hero">
-    <div class="hero-box">
+
+<!-- ===== HERO ===== -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
         <h1>📖 Online Quran Academy</h1>
-        <p>Learn Quran Online with Qualified Teachers</p>
+
+        <p>Learn Quran Online With Qualified Teachers</p>
 
         <a href="https://wa.me/923147040102">
-            <button>📲 Join Free Trial</button>
+            <button>📱 Join Free Trial</button>
         </a>
-    </div>
-</div>
 
+    </div>
+
+</section>
 <div class="container" id="about">
 
 <img src="profile . jpg" class="profile" alt="Qari Muhammad Asim">
