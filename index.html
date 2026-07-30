@@ -412,10 +412,10 @@ transform:translateY(0);
 }
 
 .hero{
-    height:200px;
-    background-size:contain;
+    height:230px;
+    background-size:cover;
+    position:relative;
 }
-
 .hero-content h1{
     font-size:22px;
 }
@@ -432,12 +432,16 @@ transform:translateY(0);
 .section-title{
     font-size:26px;
 }
-
 .join-box{
-    text-align:center;
-    margin-top:50px;
-    margin-bottom:30px;
-    ;
+    position:absolute;
+    left:50%;
+    bottom:-100px;
+    transform:translateX(-50%);
+    width:100%;
+    display:flex;
+    justify-content:center;
+    z-index:100;
+}
     
 }
 
@@ -477,20 +481,22 @@ transform:translateY(0);
 </nav>
 
 <!-- ===== HERO ===== -->
-
 <section class="hero" id="home">
 
     <div class="hero-content">
-
         <h1>📖 Online Quran Academy</h1>
-
         <p>Learn Quran Online With Qualified Teachers</p>
-        
-    <a href="https://wa.me/923147040102?text=Assalamu%20Alaikum,%20I%20am%20contacting%20you%20through%20the%20Online%20Quran%20Academy%20website." target="_blank">
-    <button class="join-btn">📱 Join Free Trial</button>
-    </a>
-    </div>  
+    </div>
+
+    <!-- Join Button -->
+    <div class="join-box">
+        <a href="https://wa.me/923147040102?text=Assalamu%20Alaikum,%20I%20want%20to%20join%20your%20Online%20Quran%20Academy." target="_blank">
+            <button class="join-btn">📱 Join Free Trial</button>
+        </a>
+    </div>
+
 </section>
+
 
 <div class="container" id="about">
 
